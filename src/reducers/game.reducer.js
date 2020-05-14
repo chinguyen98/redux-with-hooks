@@ -1,10 +1,15 @@
-const gameReducer = (state, action) => {
+const initialState = {
+  list: [],
+  activeId: null
+}
+
+const gameReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_GAME': {
-      break;
+      return state;
     }
     case 'SET_STATUS_GAME': {
-      break;
+      return state;
     }
     default: {
       return state;
