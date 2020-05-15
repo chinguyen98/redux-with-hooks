@@ -1,0 +1,11 @@
+ul.game-list{
+  color: blue;
+}
+
+ul.hobby-list li{
+  transition: all 0.7s;
+}
+
+ul.game-list > li.active {
+  color: deeppink;
+}

@@ -12,7 +12,10 @@ const gameReducer = (state = initialState, action) => {
       };
     }
     case 'SET_STATUS_GAME': {
-      return state;
+      return {
+        ...state,
+        activeId: action.payload.id,
+      };
     }
     default: {
       return state;
